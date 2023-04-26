@@ -2,6 +2,7 @@ services:
 - type: web
   name: retool
   env: docker
+  region: frankfurt
   plan: standard
   healthCheckPath: /api/checkHealth
   autoDeploy: false
@@ -43,3 +44,4 @@ databases:
 - name: retool
   databaseName: retooldb
   user: retool_user
+  region: frankfurt
